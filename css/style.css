@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* global css */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+/* root */
+:root {
+    --white: #FFFFFF;
+    --dark-grey: #797979;
+    --green: #38AF90;
+    --salmon-pink: #DD7E92;
+    --greey-inputs: #999999;
+    --greey-cards: #F0F0F0;
+    --grey-placeholders: #C4C4C4;
+
+}
+
+/* foonts */
+#header-title {
+    font-size: 1.125rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+#noticias-title, #title-inscricao {
+    font-size: 1.5rem;
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+#card-title {
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 700;
+}
+
+#span-lorem-noticia {
+    font-size: 0.75rem;
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+#date-card {
+    font-size: 0.625rem;
+    color: var(--green);
+    font-weight: 400;
+}
+
+#p-lorem-noticia {
+    font-size: 0.625rem;
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+#ler-noticia {
+    font-size: 0.875rem;
+    color: var(--salmon-pink);
+    font-weight: 700;
+}
+
+button {
+    font-size: 1.125rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+#jogos-title {
+    font-size: 1.5rem;
+    color: var(--green);
+    font-weight: 700;
+}
+
+#title-jogos {
+    font-size: 18px;
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+#de-card, #rate-jogo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#de-card {
+    color: var(--green);
+}
+
+#rate-jogo {
+    font-size: 36px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+#nome::placeholder, #email::placeholder {
+    font-size: 16px;
+    color: var(--grey-placeholders);
+    font-weight: 400;
+}
+
+#p-fieldset, .plataform-label {
+    font-size: 16px;
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+#label-novidades {
+    font-size: 16px;
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+.footer p {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+}
