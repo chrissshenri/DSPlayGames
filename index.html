@@ -11,22 +11,24 @@
 
 <body>
 
-    <header id="header container">
-        <h1 id="header-title">DSPlayGames</h1>
+    <header id="header">
+        <div class="header container">
+            <h1 id="header-title">DSPlayGames</h1>
         <img 
             src="img/user.png" 
             alt="profile-icon">
+        </div>
     </header>
 
     <main>
 
         <section id="noticias">
-            <div class="noticias container">
+            <div class="container noticias">
                 <h2 id="noticias-title">Últimas notícias</h2>
                 <div class="card-noticia">
                     <h3 id="card-title">Título principal da notícia</h3>
                     <span id="span-lorem-noticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam.</span>
-                    <div></div>
+                    <div id="hr"></div>
                     <span id="date-card">23/02/2022</span>
                     <p id="p-lorem-noticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam. 
                         Harum, in dicta? Perspiciatis nam, facilis nesciunt, expedita esse labore officiis ut ipsam voluptates aperiam laboriosam sequi! Expedita vitae iste quae veniam molestiae ea ad alias maiores. 
@@ -52,33 +54,24 @@
                         Eligendi sapiente id enim quibusdam, repudiandae optio error! Vitae perspiciatis voluptatem sequi nostrum necessitatibus culpa fuga ...</p>
                     <span id="ler-noticia">Ler mais...</span>
                 </div>
-
-                <button>Carregar mais</button>
+                <div class="btn-noticia">
+                    <button id="carregar-mais">Carregar mais</button>
+                </div>
             </div>
         </section>
 
         <section id="jogos">
-            <div class="jogos container">
+            <h4 id="jogos-title">Jogos</h4>
+            <div class="container jogos">
                 <div class="card-jogos">
-                    <h4 id="jogos-title">Jogos</h4>
                     <img 
                         src="img/game.png" 
                         alt="game img">
                     <div class="card-jogos-content">
                         <h2 id="title-jogos">Horizon Forbidden West</h2>
-                        <span id="de-card">De</span><p>Sony Interactive Entertainment</p>
-                        <span id="rate-jogo">9.7</span>
-                    </div>
-                </div>
-    
-                <div class="card-jogos">
-                    <h4 id="jogos-title">Jogos</h4>
-                    <img 
-                        src="img/game.png" 
-                        alt="game img">
-                    <div class="card-jogos-content">
-                        <h2 id="title-jogos">Horizon Forbidden West</h2>
-                        <span id="de-card">De</span><p>Sony Interactive Entertainment</p>
+                        <div class="by">
+                            <span id="de-card">De</span><p id="p-by">Sony Interactive Entertainment</p>
+                        </div>
                         <span id="rate-jogo">9.7</span>
                     </div>
                 </div>
@@ -88,8 +81,23 @@
                         src="img/game.png" 
                         alt="game img">
                     <div class="card-jogos-content">
-                        <h2>Horizon Forbidden West</h2>
-                        <span id="de-card">De</span><p>Sony Interactive Entertainment</p>
+                        <h2 id="title-jogos">Horizon Forbidden West</h2>
+                        <div class="by">
+                            <span id="de-card">De</span><p id="p-by">Sony Interactive Entertainment</p>
+                        </div>
+                        <span id="rate-jogo">9.7</span>
+                    </div>
+                </div>
+    
+                <div class="card-jogos">
+                    <img 
+                        src="img/game.png" 
+                        alt="game img">
+                    <div class="card-jogos-content">
+                        <h2 id="title-jogos">Horizon Forbidden West</h2>
+                        <div class="by">
+                            <span id="de-card">De</span><p id="p-by">Sony Interactive Entertainment</p>
+                        </div>
                         <span id="rate-jogo">9.7</span>
                     </div>
                 </div>
@@ -97,7 +105,7 @@
         </section>
 
         <section id="inscricao">
-            <div class="inscricao container">
+            <div class="container inscricao">
                 <h3 id="title-inscricao">Faça sua inscrição</h3>
                 <form action="inscricao">
                     <input type="text" name="nome" id="nome" placeholder="Nome completo">
@@ -105,21 +113,32 @@
                     
                     <fieldset>
                         <p id="p-fieldset">Qual sua plataforma preferida?</p>
+
+                        <div class="inputs-labels">
+                            <div class="input-1">
+                                <input type="radio" id="plataforma-pc" name="plataform" value="PC">
+                                <label for="plataforma-pc" class="plataform-label">PC</label>
+                            </div>
+                            
+                            <div class="input-2">
+                                <input type="radio" id="plataforma-xbox" name="plataform" value="Xbox">
+                            <label for="plataforma-xbox" class="plataform-label">Xbox</label>
+                            </div>
+                            
+                            <div class="input-3">
+                                <input type="radio" id="plataforma-playstation" name="plataform" value="Playstation">
+                                <label for="plataforma-playstation" class="plataform-label">Playstation</label>
+                            </div>
+                            
+                            <div class="input-4">
+                                <input type="checkbox" id="checkbox-novidades">
+                                <label for="checkbox-novidades" id="label-novidades">Desejo receber novidades.</label>
+                            </div>
+                            
+                        </div>
                         
-                        <input type="radio" id="plataforma-pc" name="plataform" value="PC">
-                        <label for="plataforma-pc" class="plataform-label">PC</label>
-                        
-                        <input type="radio" id="plataforma-xbox" name="plataform" value="Xbox">
-                        <label for="plataforma-xbox" class="plataform-label">Xbox</label>
-
-                        <input type="radio" id="plataforma-playstation" name="plataform" value="Playstation">
-                        <label for="plataforma-playstation" class="plataform-label">Playstation</label>
-
-                        <input type="checkbox" id="checkbox-novidades">
-                        <label for="checkbox-novidades" id="label-novidades">Desejo receber novidades.</label>
-
                         <div class="btns-inscricao">
-                            <button>Enviar</button>
+                            <button id="btn-enviar">Enviar</button>
                             <button id="btn-limpar">Limpar</button>
                         </div>
                     </fieldset>
@@ -131,11 +150,11 @@
 
     <footer>
         <div class="footer container">
-            <p>@dsplaygames</p>
-            <p>/dsplaygames</p>
-            <p>DS Play Games Ltda. Todos direitos reservados</p>
-            <p>Política de privacidade</p>
-            <p>Termos de uso</p>
+            <a href="#"><p>@dsplaygames</p></a> 
+            <a href="#"><p>/dsplaygames</p></a> 
+            <p id="reserved">DS Play Games Ltda. Todos direitos reservados</p>
+            <a href="#"><p>Política de privacidade</p></a> 
+            <a href="#"><p>Termos de uso</p></a> 
         </div>
     </footer>
 
