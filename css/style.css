@@ -26,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+nav {
+    display: flex;
+    gap: 29px;
+}
+
 /* root */
 :root {
     --white: #FFFFFF;
@@ -39,6 +44,13 @@ a {
 }
 
 /* foonts */
+nav a {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+    display: none;
+}
+
 #header-title {
     font-size: 1.125rem;
     color: var(--white);
@@ -192,11 +204,13 @@ p {
     height: 90px;
     width: 100%;
     background-color: var(--green);
-    padding: 14px 10px;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 1px 12px 4px rgba(0,0,0,0.7);
 }
 
 .header {
+    padding: 14px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -229,7 +243,7 @@ p {
 }
 
 #hr {
-    height: 3px;
+    height: 2px;
     background-color: var(--green);
 }
 
@@ -288,7 +302,8 @@ p {
 form {
     padding: 52px 12px 33px 12px;
     background-color: var(--greey-cards);
-    max-width: 100%;
+    max-width: 790px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -301,7 +316,8 @@ form {
     border-radius: 4px;
     border: 1px solid #797979;
     background: #FFF;
-    width: 103%;
+    max-width: 642px;
+    width: 100%;
     cursor: auto;
 }
 
@@ -358,4 +374,58 @@ footer {
 #reserved {
     margin-top: 37px;
     margin-bottom: 37px;
+}
+
+
+/* RESPONSIVIDADE */
+@media(min-width: 768px) {
+    .header {
+        padding: 27px 105px;
+    }
+
+    nav {
+        margin-left: 70px;
+    }
+
+    nav a {
+        display: inline;
+    }
+
+    #noticias-title {
+        font-size: 2.25rem;
+    }
+
+    .noticias {
+        padding: 40px 105px 56px 105px;
+    }
+
+    form {
+        padding: 52px 75px;
+    }
+
+    .btns-inscricao {
+        flex-direction: row;
+        justify-content: center;
+        gap: 52px;
+    }
+
+}
+
+
+@media(min-width: 1024px) {
+    nav {
+        margin-left: 270px;
+    }
+    .jogos {
+        flex-direction: row;
+        padding: 70px 120px;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
